@@ -1,0 +1,78 @@
+html, body,*{
+    font-family: 'Playfair', serif;
+}
+
+body{
+    background-color: black;
+    color: white;    
+}
+
+h1{
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2{
+    font-size: 40px;
+}
+
+li{
+    font-size: 20px;
+    list-style-type: none;
+    margin: 10px;
+}
+
+p{
+    font-size: 20px;
+}
+.tudo{
+    text-align: center; 
+}
+
+.info{
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1px;
+}
+
+#myVideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;    
+    filter: hue-rotate(230deg);
+    opacity:calc(50%);
+}
+
+.mail{
+    color: rgb(170, 147, 255);
+}
+
+.menu{
+    font-size: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px;
+    outline-style: hidden;
+    background-color: #8229ff;
+    border: none;
+    box-shadow: 0px 0px 8px 5px #00f2ff; 
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    color: #00f2ff;
+}
+
+.menu:hover {
+    background-color:  #8229ff;
+    box-shadow: 0px 0px 8px 5px #fff700; 
+    color: #fff700;
+}

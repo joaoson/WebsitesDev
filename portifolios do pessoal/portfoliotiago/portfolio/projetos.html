@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link href="./css/pagTiago.css" rel="stylesheet">
+    <link href="./css/projetosTiago.css" rel="stylesheet">
+
+    <title>Tiago Prestes - Portfolio</title>
+</head>
+<body>
+    <section class="main-container" id="container-section" style="align-items: normal;">
+        <header>
+            <a href="pagTiago.html" class="logo">TBP</a>
+            <div id="toggle" onclick="toggleBanner()"></div>
+        </header>
+
+        <div class="projects-container">
+            <div class="project-content-card">
+                <h2>TeamFinder</h2>
+                <div class="line-prop"></div>
+                <div class="card-content">
+                    <img src="./images/teamfinder.png">
+                    <div>
+                        <h2>
+                            Tools: <span class="highlight-span">HTML</span>, <span class="highlight-span">CSS</span> and <span class="highlight-span">Photoshop</span>
+                        </h2>
+                        <p>
+                            "TeamFinder" is a system idea to improve team building in on-line games. Its main purpose is to maximize chemistry between teammates, match compatible play styles and contribute to a better gaming experience.
+                        </p>
+                        <p>
+                            The project was a group effort between me and some college colleagues and everything was coordinated using Kanban methodology and Trello. My responsibility was planning and developing the website's graphical interface.
+                        </p>
+                        <a href="https://bptiago.github.io/team-finder/" target="_blank">Host</a>
+                        <a href="https://github.com/bptiago/team-finder" target="_blank">Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-content-card">
+                <h2>Blackjack</h2>
+                <div class="line-prop"></div>
+                <div class="card-content">
+                    <img src="./images/blackjack.png">
+                    <div>
+                        <h2>
+                            Tools: <span class="highlight-span">HTML</span>, <span class="highlight-span">CSS</span> and <span class="highlight-span">JavaScript</span>
+                        </h2>
+                        <p>
+                            Simplified version of the game "Blackjack". This project was developed with the intention of experimenting with Object-Oriented Programming and reviewing development concepts I learned through an extracurricular JavaScript course.
+                        </p>
+                        <p>
+                            The project is still in development and my next step is to add graphical elements to the game, like cards and actions/animations.
+                        </p>
+                        <a href="https://bptiago.github.io/blackjack-js/" target="_blank">Host</a>
+                        <a href="https://github.com/bptiago/blackjack-js" target="_blank">Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-content-card">
+                <h2>Soda Machine</h2>
+                <div class="line-prop"></div>
+                <div class="card-content">
+                    <img src="./images/pjbl.png">
+                    <div>
+                        <h2>
+                            Tool: <span class="highlight-span">Python</span>
+                        </h2>
+                        <p>
+                            Soda machine simulator with functionalities for withdrawing and depositing money and goods (for the machine admin), purchasing products and returning change.
+                        </p>
+                        <p>
+                            The project was a partial grade requirement and its objective was to explore fundamental concepts of programming, such as logical sequences (if/else) and iterations (while/for).                        </p>
+                        <a href="https://github.com/bptiago/pjbl-moedeiro" target="_blank">Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="pagTiago.html">Home</a></li>
+            <li><a href="projetos.html">Projects</a></li>
+            <li><a href="curriculo.html">Resume</a></li>
+            <li><a href="video.html">Video Resume</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggleBanner() {
+            const secElement = document.getElementById('container-section');
+            const navElement = document.getElementById('navigation');
+            secElement.classList.toggle('active');
+            navElement.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

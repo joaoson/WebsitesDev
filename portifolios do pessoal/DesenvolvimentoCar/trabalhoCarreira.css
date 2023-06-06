@@ -1,0 +1,653 @@
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 135deg;
+    inherits: false;
+  }
+
+body, html, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.smooth{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+    transition: all 1000ms;
+}
+
+#sol{
+    width: 200px;
+    background-color: yellow;
+    height: 200px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    box-shadow: 0 0 146px 6px #f3e821;
+    transition: all 800ms ;
+}
+
+
+.github{
+    position:absolute;
+    top: 10%;
+    width: 100px;
+    background-color: gray;
+    height: 100px;
+    border-radius: 100px;
+    left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: github;
+    animation-duration: 30s;
+    transition: all 800ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-image: linear-gradient(
+    var(--rotate)
+    , black 20%, #ccc 50%, #fff);
+}
+
+.linkedin{
+    position:absolute;
+    top: 10%;
+    width: 100px;
+    background-color: gray;
+    height: 100px;
+    border-radius: 100px;
+    left: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: linkedin;
+    animation-duration: 30s;
+    transition: all 800ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-image: linear-gradient(
+    var(--rotate)
+    , black 20%, #ccc 50%, #fff);
+}
+
+.portfolio{
+    left: 80%;
+    top: 70%;
+    position:absolute;
+    width: 100px;
+    background-color: gray;
+    height: 100px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: portfolio;
+    transition: all 800ms;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-image: linear-gradient(
+    var(--rotate)
+    , black 20%, #ccc 50%, #fff);
+}
+
+.instagram{
+    left: 15%;
+    top: 70%;
+    position:absolute;
+    width: 100px;
+    background-color: gray;
+    height: 100px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: instagram;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    transition: all 800ms;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    background-image: linear-gradient(
+    var(--rotate)
+    , black 20%, #ccc 50%, #fff);
+}
+
+.all:hover span{
+    -webkit-animation-play-state: paused;
+
+}
+
+.instagram:hover{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    -moz-transition:all 2s;
+    -webkit-transition:all 2s;
+    -o-transition:all 2s;
+    transition:all 2s;
+    cursor: pointer;
+}
+
+@keyframes instagram {
+    0%   {left:22%; top:70%;--rotate: 45deg}
+    12.5% {left:7%; top:40%; --rotate: 90deg}
+    25%  {left:22%; top:15%;--rotate: 135deg}
+    37.5% {left:47%; top:5%; --rotate: 180deg}
+    50%  {left:73%; top:15%;--rotate: 225deg}
+    62.5% {left:88%; top:40%; --rotate: 270deg}
+    75%  {left:80%; top:70%;--rotate: 315deg}
+    87.5% {left:47%; top:75%; --rotate: 360deg}
+    100% {left:15%; top:70%;--rotate: 405deg}
+}
+
+@keyframes portfolio{
+    0%  {left:80%; top:70%;--rotate: 315deg}
+    12.5% {left:47%; top:75%; --rotate: 360deg}
+    25% {left:15%; top:70%;--rotate: 405deg}
+    37.5% {left:7%; top:40%; --rotate: 450deg}
+    50% {left:15%; top:10%;--rotate: 495deg}
+    62.5% {left:47%; top:5%; --rotate: 540deg}
+    75%  {left:80%; top:10%;--rotate: 585deg}
+    87.5% {left:88%; top:40%; --rotate: 630deg}
+    100%  {left:80%; top:70%;--rotate: 675deg}
+}
+
+@keyframes github{
+    0% {left:15%; top:10%; --rotate:135deg}
+    12.5% {left:47%; top:5%; --rotate: 180deg}
+    25%  {left:80%; top:10%; --rotate: 225deg}
+    37.5% {left:88%; top:40%; --rotate: 270deg}
+    50%  {left:80%; top:70%; --rotate: 315deg}
+    62.5% {left:47%; top:75%; --rotate: 360deg}
+    75% {left:15%; top:70%; --rotate: 405deg}
+    87.5% {left:7%; top:40%; --rotate: 450deg}
+    100% {left:15%; top:10%; --rotate: 495deg}
+}
+
+@keyframes linkedin{
+    0%  {left:80%; top:10%;--rotate: 225deg}
+    12.5% {left:88%; top:40%; --rotate: 270deg}
+    25%  {left:80%; top:70%;--rotate: 315deg}
+    37.5% {left:47%; top:75%; --rotate: 360deg}
+    50% {left:15%; top:70%; --rotate: 405deg}
+    62.5% {left:7%; top:40%; --rotate: 450deg}
+    75% {left:15%; top:10%; --rotate: 495deg}
+    87.5% {left:47%; top:5%; --rotate: 540deg}
+    100% {left:80%; top:10%; --rotate: 585deg}
+}
+
+#sol:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.cliquei{
+    transform: translateY(-2000%);
+}
+
+.diminui{
+    width: 0;
+    height: 0;
+    opacity: 0;    
+}
+
+.hidden{
+    display: none;
+}
+
+p{
+    color: white;
+}
+
+section h1{
+    color: white;
+    font-size: 2rem;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+section nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 1;
+}
+
+.links{
+    width: 30%;
+}
+
+nav ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+li{
+    list-style: none;
+    transition: all 500ms;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+li:hover{
+    border: 1px solid white ;
+    padding: 1rem;  
+}
+
+@keyframes background-pan{
+    from{
+        background-position: 0% center;
+    }
+
+    to{
+        background-position: 200% center;
+    }
+}
+
+.maintitle p{
+    font-size: 3rem;
+}
+
+.maintitle{
+    width: 100%;
+    margin-top: 6rem;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.animate{
+    animation: background-pan 3s linear infinite, 2s infinite blinking;; 
+    background: linear-gradient(to right, #8ec3cd, #2259d0, #a428cd, #8ec3cd);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    font-size: 10rem;
+    height: 12rem;
+    font-weight: bold;
+    padding-right: 10px;
+    border-right: 10px white solid;
+    margin-top: 3rem;
+}
+
+@keyframes blinking {
+    0% {border-color: white ;}
+    50% {border-color: transparent;}
+}
+
+
+.aboutme{
+    width: 100%;
+    display: flex;
+    margin-top: 20rem;
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutme img{
+    border-radius: 200px;
+    width: 20%;
+}
+
+.contentabout{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+}
+.contentabouttext{
+    width: 60%;
+}
+
+.contentabouttext h2{
+    color: #5cdff9;
+}
+
+.contentabouttext h3{
+    margin-top: 1rem;
+    width: 90%;
+}
+
+.contentabouttext p{
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.linkButtons{
+    margin-top: 2rem;
+}
+
+.curriculo, .email{
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    transition: all 400ms;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.curriculo img, .email img{
+    width: 1.3rem;
+    border-radius: 0;
+    vertical-align: middle;
+}
+
+.curriculo:hover, .email:hover{
+    transform: scale(1.1);
+    
+}
+
+.email{
+    margin-left: 1rem;
+    background-color:#5cdff9;
+}
+
+.icons{
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    position: relative;
+    top: 30%;
+}
+ .icons img, .contacticons img{
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+    z-index: 0;
+ }
+
+ .icons a{
+    width: 13%;
+ }
+
+ .skills{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-top: 7rem;
+ }
+
+ .skilllogos{
+    width: 90%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    row-gap: 3rem;
+ }
+
+ .skill img{
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+    z-index: 0;
+ }
+
+ .skill{
+    background-color: #0F1116;
+    width: 22%;
+    display: flex;
+    align-items: center;
+ }
+
+ .skill img{
+    width: 15%;
+    padding: 1rem 0;
+    margin: 0 10px 0 20px;
+ }
+
+ .skill p{
+    font-weight: bold;
+    font-size: 1.2rem;
+ }
+
+ .projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-top: 10rem;
+ }
+
+ .projects a{
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    transition: all 500ms;
+    font-weight: bold;
+    margin-top: 4rem;
+    background-color: none;
+    color:#5cdff9 ;
+    text-decoration: none;
+ }
+
+ .projects a:hover{
+    transform: scale(1.1);
+    background-color: #0F1116;
+ }
+
+ .projectImages{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;  
+    row-gap: 2rem;
+    margin-top: 3rem;
+ }
+
+ .projectImages img{
+    width: 27%;
+    aspect-ratio: 16/9;
+    transition: all 500ms;
+ }
+
+ .projectImages img:hover{
+    transform: scale(1.1);
+ }
+
+ .services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 7rem;
+ }
+
+ .servicetitle{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+ }
+
+ .servicetitle h2 span{
+    color: #5cdff9;
+ }
+
+ .servicelist{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    gap: 1rem;
+ }
+
+ .card{
+    background-color: #0F1116; 
+    height: auto;
+    display: flex;
+    width: 22%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+ }
+
+ .card h2{
+    margin: 1rem 0;
+    height: 5rem;
+ }
+
+ .card p{
+    width: 90%;
+    text-align: left;
+    margin-bottom: 2rem;
+ }
+
+ .contact{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    margin: 5rem 0 5rem 0;
+ }
+
+ .contact h2{
+    margin-bottom: 1rem;
+ }
+
+ .contact p{
+    font-size: 1.2rem;
+ }
+
+ .contact img{
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+    z-index: 0;
+    width: 2%;
+    rotate: 90deg;
+    margin-top: 2rem;
+ }
+
+ .contacticons{
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+
+ }
+
+.contacticons a{
+    width: 4%;
+}
+
+ .contacticons img{
+    width: 100%;
+    rotate: 0deg;
+ }
+
+ footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #0F1116;
+ }
+
+ .center{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+ }
+
+ .center a{
+    width: 10%;
+ }
+
+ .center a button{
+    width: 100%;
+    aspect-ratio: 1/1;
+ }
+
+ .center img{
+    width: 30%;
+    aspect-ratio: 1/1;
+    rotate: -90deg;
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+    z-index: 0;
+ }
+
+ .videoCurr{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+ }
+
+ .linksvideo{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+ }
+
+ .linksvideo a{
+    text-decoration: none;
+    color: white;
+    padding: 2rem;
+    background-color: #0F1116;
+    font-size: 1.2rem;
+    border-radius: 20px;
+ }

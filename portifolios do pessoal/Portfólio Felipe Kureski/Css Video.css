@@ -1,0 +1,11 @@
+body{
+    background-color: black;
+    background-image: url(Particles.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.video {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}

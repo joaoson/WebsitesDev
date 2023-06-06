@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link href="./css/base.css" rel="stylesheet">
+    <link href="./css/pagTiago.css" rel="stylesheet">
+
+    <title>Tiago Prestes - Portfolio</title>
+</head>
+<body>
+    <section class="main-container" id="container-section">
+        <header>
+            <a href="pagTiago.html" class="logo">TBP</a>
+            <div id="toggle" onclick="toggleBanner()"></div>
+        </header>
+
+        <div class="content">
+            <img src="./images/selfie.png" class="profile-pic first-layer second-layer third-layer" alt="Profile picture">
+            <div class="content-text-elements">
+                <div class="content-hello">Hello World! My name is</div>
+                <div class="content-name"><span class="highlight-span">Tiago</span> Prestes</div>
+                <p>
+                    I'm a student of <span class="highlight-span">Information Systems</span> at <span class="highlight-span">PUCPR</span> and passionate about developing interactive and innovative applications.
+                </p>
+                <a href="#"></a>
+                <div class="social-icons">
+                    <a href="https://github.com/bptiago" target="_blank"><img src="./images/github.png" class="github-logo">GitHub</a>
+                    <a href="https://www.linkedin.com/in/tiago-bisolo-prestes-248445258/" target="_blank"><img src="./images/linkedin.png" class="linkedin-logo">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="pagTiago.html">Home</a></li>
+            <li><a href="projetos.html">Projects</a></li>
+            <li><a href="curriculo.html">Resume</a></li>
+            <li><a href="video.html">Video Resume</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggleBanner() {
+            const secElement = document.getElementById('container-section');
+            const navElement = document.getElementById('navigation');
+            secElement.classList.toggle('active');
+            navElement.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

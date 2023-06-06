@@ -1,0 +1,91 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(rgb(0, 0, 0));
+}
+header {
+    background: rgb(0, 0, 0);
+    width: auto;
+    padding: 2px 0 0 20px;
+    text-align: center;
+    border: 1px solid;
+}
+
+.meu-cabecalho {
+   width: auto;
+}
+img {
+    margin: 10px 0 0 0;
+    position: relative;
+    right: 8.4em;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: center;
+    position: relative;
+    left: 1em;
+    bottom: 4em;
+    font-weight: bold;
+    font-size: 1em;
+}
+.container-conteudo {
+    text-align: center;
+
+    line-height: 1em;
+    width: auto;
+}
+h2 {
+    font-weight: bold;
+    margin: 50px 0 0  0 ;
+    font-style: oblique;
+    color: rgb(255, 255, 255);
+}
+li, p {
+    line-height: 2em;
+}
+.container-contato {
+    margin: 0 0 0 10px ;
+    text-align: center;
+}
+
+footer {
+    background: rgb(0, 0, 0);
+    width: auto;
+}
+
+
+li{
+    list-style: none;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+p{
+    font-style: oblique;
+    color: rgb(255, 255, 255);
+}
+.button1 {
+background-color: rgb(58, 124, 27);
+box-shadow: 0px 0px 5px 10px rgb(9, 94, 6);
+border: 0;
+padding: 1px;
+width: 200px;
+height: 50px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+cursor: pointer;
+position: relative;
+    }
+    .button1:hover {
+     transition: 0.025s;
+     background-color: rgb(16, 60, 15);
+    
+    }
+
+

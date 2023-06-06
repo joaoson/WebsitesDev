@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link href="./css/pagTiago.css" rel="stylesheet">
+    <link href="./css/curriculo.css" rel="stylesheet">
+
+    <title>Tiago Prestes - Portfolio</title>
+</head>
+<body>
+    <section class="main-container" id="container-section">
+        <header>
+            <a href="pagTiago.html" class="logo">TBP</a>
+            <div id="toggle" onclick="toggleBanner()"></div>
+        </header>
+
+        <div class="content-container">
+            <h1>My Resume</h1>
+            <div class="download-container">
+                <a class="download-button" href="./files/Front End Resume.pdf" download="">Download Resume</a>
+            </div>
+            
+            <h2>Work Experience</h2>
+            <div class="resume-card">
+                <div class="left-side-card">
+                    <h3>Court of Justice of Paraná</h3>
+                    <div>IT Intern</div>
+                    <p>May/23 - Now<br>Curitiba/PR</p>
+                </div>
+                <div class="right-side-card">
+                    <h3>Main Tasks</h3>
+                    <p>System documentation, administration of users and services within the organization's internal system and user technical support.</p>
+                </div>
+            </div>
+            <h2>Education</h2>
+            <div class="resume-card">
+                <div class="left-side-card">
+                    <h3>Bachelor's Degree in Information Systems</h3>
+                    <div>Pontificia Universidade<br>Católica do Paraná - PUCPR</div>
+                    <p>2023/1 - Now<br>Curitiba/PR</p>
+                </div>
+                <div class="right-side-card">
+                    <h3>Skils Learned</h3>
+                    <ul>
+                        <li>Algorithms (Python)</li>
+                        <li>Web Programming (HTML, CSS and JavaScript)</li>
+                        <li>Computer hardware</li>
+                        <li>Agile methodologies (Scrum and Kanban)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resume-card" style="margin-top: 20px;">
+                <div class="left-side-card">
+                    <h3>Bachelor's Degree in Pharmacy</h3>
+                    <div>Universidade Federal do Paraná - UFPR</div>
+                    <p>Interrupted | 2021/1 - 2022/2<br>Curitiba/PR</p>
+                </div>
+                <div class="right-side-card">
+                    <h3>Description</h3>
+                    <p>Studying pharmacy during this time was a life changing experience. I met some of the most brilliant professors in my state and discovered so much about myself. One of those things, however, was my calling for programming and technology, which led me to changing my Bachelor's Degree.</p>
+                </div>
+            </div>
+            <h2>Interests</h2>
+            <div class="resume-card" style="display:flex; justify-content: center;">
+                <div class="interests-content">
+                    <a><img src="./images/front-end.png">Front-End</a>
+                    <a><img src="./images/development.png">Back-End</a>
+                    <a><img src="./images/data-science.png">Data Science</a>
+                </div>
+            </div>
+            <h2>Languages</h2>
+            <div class="resume-card" style="margin-top: 20px;">
+                <div class="left-side-card">
+                    <h3>Portuguese</h3>
+                    <div>Native</div>
+                </div>
+                <div class="left-side-card">
+                    <h3>English</h3>
+                    <div>Advanced</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="pagTiago.html">Home</a></li>
+            <li><a href="projetos.html">Projects</a></li>
+            <li><a href="curriculo.html">Resume</a></li>
+            <li><a href="video.html">Video Resume</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        function toggleBanner() {
+            const secElement = document.getElementById('container-section');
+            const navElement = document.getElementById('navigation');
+            secElement.classList.toggle('active');
+            navElement.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

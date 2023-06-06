@@ -1,0 +1,26 @@
+html, body, * {
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    margin-top: 20px;
+}
+
+.section{
+    margin-top: 20px;
+}
+
+.section-title{
+    font-weight: bold;
+}
+
+.section-content{
+    margin-left: 20px;
+}

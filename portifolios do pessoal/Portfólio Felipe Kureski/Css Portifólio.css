@@ -1,0 +1,94 @@
+* {
+    margin: 0%;
+}
+
+body{
+    background-image: url(Particles.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.maincontent{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 13%;
+}
+
+.maincontent p {
+    text-align: left;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+    margin-left: 3%;
+}
+
+.foto{
+    background-color: rgb(14, 19, 17);
+    border-radius: 50%;
+    margin-right: 3%;
+}
+
+.links{
+    padding-right: 10%;
+    padding-left: 10%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    row-gap: 60px;
+}
+
+#linkedin{
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px;
+    box-shadow: 1px 1px 1px 3px;
+    color:rgb(137, 255, 208);
+}
+
+#video{
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px;
+    box-shadow: 1px 1px 1px 3px;
+    color:rgb(137, 255, 208);
+}
+
+#curriculo{
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px;
+    box-shadow: 1px 1px 1px 3px;
+    color:rgb(137, 255, 208);
+}
+
+#github{
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px;
+    box-shadow: 1px 1px 1px 3px;
+    color:rgb(137, 255, 208);
+}   
+
+#linkedin:hover{
+    cursor: pointer;
+    color: rgba(137, 255, 208, 0.385);
+}
+
+#video:hover{
+    cursor: pointer;
+    color: rgba(137, 255, 208, 0.385);
+}
+
+#curriculo:hover{
+    cursor: pointer;
+    color: rgba(137, 255, 208, 0.385);
+}
+
+#github:hover{
+    cursor: pointer;
+    color: rgba(137, 255, 208, 0.385);
+}
